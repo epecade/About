@@ -4,54 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>YourName | Discord Server Designer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    /* Base Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
       background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: #ffffff;
       font-family: 'Montserrat', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
+      padding: 0;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      font-weight: 800;
+      letter-spacing: 1px;
     }
 
     h1 {
-      font-size: 3.5rem;
-      margin-bottom: 10px;
+      font-size: 4rem;
       background: linear-gradient(90deg, #8f9cf0, #ff6ec4);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-top: 60px;
     }
 
     .subtitle {
-      font-size: 1.2rem;
+      text-align: center;
+      font-size: 1.3rem;
       color: #cccccc;
+      margin-top: 10px;
       margin-bottom: 40px;
     }
 
-    .about {
-      background: rgba(255,255,255,0.08);
-      padding: 30px;
-      border-radius: 15px;
-      max-width: 800px;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 0 25px rgba(0,0,0,0.3);
-      margin-bottom: 50px;
+    .glass {
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 60px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.2);
+      backdrop-filter: blur(8px);
     }
 
-    .about p {
+    p {
+      line-height: 1.8;
       font-size: 1.1rem;
-      line-height: 1.7;
     }
 
     .highlight {
@@ -59,55 +68,106 @@
       font-weight: bold;
     }
 
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+    .divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, #8f9cf0, transparent);
+      margin: 60px auto;
+      width: 60%;
+      border-radius: 999px;
+    }
+
+    .btn-group {
+      text-align: center;
+      margin-top: 40px;
     }
 
     .btn {
-      padding: 15px 30px;
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 35px;
       border-radius: 50px;
       text-decoration: none;
       color: #fff;
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 1rem;
       transition: all 0.3s ease;
       background: linear-gradient(45deg, #8f9cf0, #ff6ec4);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     }
 
     .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
     }
 
     footer {
-      margin-top: 50px;
+      text-align: center;
       font-size: 0.9rem;
       color: #999;
+      padding: 30px 0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      section {
+        padding: 60px 20px;
+      }
+      .btn {
+        padding: 12px 25px;
+      }
     }
   </style>
 </head>
 <body>
+
   <h1>YourName</h1>
-  <p class="subtitle">Discord Server Designer • Curating aesthetic vibes for free</p>
+  <p class="subtitle">Discord Server Designer • Crafting the vibe, not chasing the bag</p>
 
-  <div class="about">
+  <section class="glass">
+    <h2>👋 About Me</h2><br>
     <p>
-      Hey there! I’m <span class="highlight">YourName</span>, a Discord server designer obsessed with creating unique vibes and perfectly organized communities.<br><br>
-      
-      I use some <span class="highlight">self-made bots</span> to speed up my process—but I always keep the quality top-tier.<br><br>
-
-      Wanna see what your next awesome server could look like? Join my Discord server and DM me there. Tell me your preferred category, and I’ll showcase your future server vibe.<br><br>
-
-      I <span class="highlight">don’t work for money</span>—I do this purely for recognition and the love of design. So if you want your free server design, follow me on Instagram and YouTube, and share my work with your friends.<br><br>
-
-      Thanks a ton for supporting my journey!
+      I'm <span class="highlight">YourName</span>, a Discord server designer who turns chaos into clean vibes. I build aesthetic, themed servers using custom layouts, smart structuring, and <span class="highlight">my own bots</span> to speed things up.  
+      Whether you want fantasy, anime, gaming, or kingdom aesthetics—I gotchu.
     </p>
-  </div>
+  </section>
 
-  <div class="links">
+  <div class="divider"></div>
+
+  <section class="glass">
+    <h2>⚙️ How It Works</h2><br>
+    <p>
+      You join my server → You DM me → I ask your preferred vibe or category → I show you a live **demo** of your future server using premade templates, roles, and channels crafted to your style.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="glass">
+    <h2>🎁 What You Get</h2><br>
+    <p>
+      ✦ Fully structured server<br>
+      ✦ Aesthetic category + channel layout<br>
+      ✦ Custom roles, emojis, and bot integration<br>
+      ✦ Delivered fast (thanks to my bots) without sacrificing ✨vibe✨
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="glass">
+    <h2>💸 Why It’s Free</h2><br>
+    <p>
+      I don’t do this for money. I do this for <span class="highlight">recognition</span>.  
+      If you vibe with what I do, help me grow:  
+      Follow me on Instagram and YouTube.  
+      Tell your friends. Post about it.  
+      That’s all I ask in return 💜
+    </p>
+  </section>
+
+  <div class="btn-group">
     <a href="https://discord.gg/YOURINVITELINK" class="btn">Join My Discord</a>
     <a href="https://instagram.com/YOURHANDLE" class="btn">Instagram</a>
     <a href="https://youtube.com/YOURCHANNEL" class="btn">YouTube</a>
@@ -116,5 +176,6 @@
   <footer>
     <p>&copy; 2025 YourName. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
